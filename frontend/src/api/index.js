@@ -1,4 +1,4 @@
-import axios from axios
+import axios from "axios"
 
 const headers = {
     Accept: 'application/json',
@@ -6,7 +6,7 @@ const headers = {
 }
 
 const api = axios.create({
-    baseURL: `${process.env.NEXT_PUBLIC_BACKEND_URL}api`,
+    baseURL: `http://localhost:1337/api`,
     headers
 })
 

@@ -1,8 +1,17 @@
+import { getAllAccount, getSelectedAccount } from "@/api/services";
 import { Inter } from "next/font/google";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
+
 export default function Home() {
+
+useEffect(() => {
+  getAllAccount()
+}, [])
+
   return (
     <main
       className={`flex max-w-2xl m-auto min-h-screen flex-col items-center p-4 pt-24 ${inter.className}`}
