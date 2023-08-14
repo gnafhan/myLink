@@ -12,5 +12,5 @@ body {
   color: rgb(var(--foreground-rgb));
   background-image: url('/bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
